@@ -1,0 +1,22 @@
+body {
+  font-family: Calibri;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("/images/css/sample_bg.jpg");
+  background-origin: padding-box;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  position: relative;
+}
+
+.primary-container {
+  background: #ffffff;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  -moz-box-shadow: 0 0 13px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.17);
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.17);
+}
