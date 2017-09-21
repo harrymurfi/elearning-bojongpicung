@@ -20,3 +20,24 @@ body {
   -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.17);
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.17);
 }
+
+#main-nav.affix {
+  top: 0;
+  left: 107px;
+  padding-left: 15px;
+  width: 1136px;
+  z-index: 10;
+}
+
+#accordion.affix {
+  top: 55px;
+  width: 265px;
+}
+
+/*parent position: relative*/
+.centralized {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

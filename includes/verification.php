@@ -1,14 +1,14 @@
 <?php
-  // main vefication
-  require_once $_SERVER['DOCUMENT_ROOT'].'\include.php';  
+  require_once $_SERVER['DOCUMENT_ROOT'].'\main.php';  
 
   if(isset($_POST['submit'])) {
     $identification = $_POST['identification'];
     $password = $_POST['password'];
     $mysqli = connect_db();
-    $res = $mysqli->query("SELECT * FROM admin");
+
+    $res_admin = $mysqli->query("SELECT * FROM admin");
     $found = FALSE;
-    foreach($res as $row) {
+    foreach($res_admin as $row) {
       if($row['username'] == $identification && $row['password']) {
         $identification = $row['username'];
         $found = TRUE;
@@ -24,7 +24,8 @@
       if(!isset($_SESSION['logon_admin'])) {
         echo "starting new session";
         session_start();
-        $_SESSION['logon_admin'] = $identification;
+        $_SESSION['active_user'] = $identification;
+        $_SESSION['active_role'] = 'admin';
         header('Location: /admin/index.php');
         die();
       }
