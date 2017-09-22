@@ -4,11 +4,11 @@
     <form class="navbar" method="post" action="/includes/verification.php">
       <div class="form-group">
         <label class="sr-only" for="identity">Username or Email</label>
-        <input class="form-control" type="text" id="identity" name="identity" placeholder="Username or Email ..." required> 
+        <input class="form-control" type="text"name="identification" placeholder="Username or Email ..." required> 
       </div>
       <div class="form-group">
         <label class="sr-only" for="password">Password</label>
-        <input class="form-control" type="password" id="password" name="password" placeholder="Password ..." required>
+        <input class="form-control" type="password" name="password" placeholder="Password ..." required>
       </div>
       <div class="checkbox">
         <label><input type="checkbox" name="rememberme"> Remember Me</label>
